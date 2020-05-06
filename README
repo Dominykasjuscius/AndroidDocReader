@@ -1,0 +1,5 @@
+This is an app i made which was ordered by a club in London.
+I was able to get this opportunity because my brother is an employee there.
+The program uses the camera to take pictures of documents and sends them to a database on a server,
+if internet is unavailable the program stores the pictures on a local database on the smartphone.
+When internet is avalable the stored photos can be sent to the server. I have added the .apk file to this repository
