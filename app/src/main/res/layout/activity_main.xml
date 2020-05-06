@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    n1:orientation="vertical" n1:id="@+id/drawer" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+    xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+
+        <android.support.constraint.ConstraintLayout
+            n1:layout_width="fill_parent"
+            n1:layout_height="fill_parent">
+
+            <ProgressBar xmlns:n2="http://schemas.android.com/apk/res-auto"
+                n1:id="@+id/progressBar2"
+                style="?android:progressBarStyle"
+                n1:layout_width="wrap_content"
+                n1:layout_height="0.0dip"
+                n1:elevation="10.0dip"
+                tools:layout_editor_absoluteX="299dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <SurfaceView xmlns:n3="http://schemas.android.com/apk/res-auto"
+                n1:id="@id/surfaceView"
+                n1:layout_width="0.0dip"
+                n1:layout_height="0.0dip"
+                n1:layout_marginBottom="8dp"
+                n1:layout_marginEnd="8dp"
+                n1:layout_marginStart="8dp"
+                n1:layout_marginTop="8dp"
+                n3:layout_constraintBottom_toBottomOf="parent"
+                n3:layout_constraintEnd_toEndOf="parent"
+                n3:layout_constraintStart_toStartOf="parent"
+                n3:layout_constraintTop_toTopOf="parent"
+                n3:layout_constraintVertical_bias="1.0" />
+
+            <ProgressBar xmlns:n4="http://schemas.android.com/apk/res-auto"
+                n1:id="@id/progressBar2"
+                style="?android:progressBarStyleHorizontal"
+                n1:layout_width="151.0dip"
+                n1:layout_height="40.0dip"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <ImageButton xmlns:n5="http://schemas.android.com/apk/res-auto"
+                n1:id="@+id/button"
+                style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+                n1:layout_width="87dp"
+                n1:layout_height="wrap_content"
+                n1:layout_marginBottom="156dp"
+                n1:layout_marginEnd="8dp"
+                n1:layout_marginStart="8dp"
+                n1:layout_marginTop="8dp"
+                n1:background="@android:color/transparent"
+                n5:layout_constraintBottom_toBottomOf="@+id/surfaceView"
+                n5:layout_constraintEnd_toEndOf="parent"
+                n5:layout_constraintHorizontal_bias="0.725"
+                n5:layout_constraintStart_toStartOf="parent"
+                n5:layout_constraintTop_toBottomOf="@+id/cancel"
+                n5:srcCompat="@drawable/ic_adjust_black_24dp" />
+
+            <Button xmlns:n6="http://schemas.android.com/apk/res-auto"
+                n1:id="@+id/send"
+                style="@style/Widget.AppCompat.Button.Colored"
+                n1:layout_width="0.0dip"
+                n1:layout_height="51dp"
+                n1:elevation="20.0dip"
+                n1:text="Send data"
+                n1:textSize="16.0sp"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="64dp" />
+
+            <Button xmlns:n7="http://schemas.android.com/apk/res-auto"
+                n1:id="@+id/cancel"
+                style="@style/Widget.AppCompat.Button.Colored"
+                n1:layout_width="wrap_content"
+                n1:layout_height="48.0dip"
+                n1:text="CANCEL"
+                n1:visibility="visible"
+                tools:layout_editor_absoluteX="211dp"
+                tools:layout_editor_absoluteY="196dp" />
+
+            <ImageButton xmlns:n8="http://schemas.android.com/apk/res-auto"
+                n1:id="@+id/menu"
+                n1:layout_width="52dp"
+                n1:layout_height="62dp"
+                n1:layout_marginBottom="8dp"
+                n1:layout_marginEnd="8dp"
+                n1:layout_marginStart="16dp"
+                n1:layout_marginTop="8dp"
+                n1:background="@color/trans"
+                n8:layout_constraintBottom_toBottomOf="@+id/surfaceView"
+                n8:layout_constraintEnd_toStartOf="@+id/send"
+                n8:layout_constraintStart_toStartOf="parent"
+                n8:layout_constraintTop_toTopOf="@+id/surfaceView"
+                n8:layout_constraintVertical_bias="0.127"
+                n8:srcCompat="@drawable/ic_view_headline_black_24dp" />
+        </android.support.constraint.ConstraintLayout>
+    </FrameLayout>
+    <android.support.design.widget.NavigationView
+        n1:layout_gravity="start"
+        n1:id="@id/sidebar"
+        n1:fitsSystemWindows="true"
+        n1:layout_width="wrap_content"
+        n1:layout_height="fill_parent"
+        app:menu="@menu/drawer_view"
+        xmlns:n9="http://schemas.android.com/apk/res-auto" />
+</android.support.v4.widget.DrawerLayout>

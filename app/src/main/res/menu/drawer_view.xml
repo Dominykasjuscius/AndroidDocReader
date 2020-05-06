@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item android:icon="@drawable/settings_icon" android:id="@+id/settings" android:title="SETTINGS"/>
+        <item android:icon="@drawable/flash_on" android:id="@+id/flash" android:title="TURN ON FLASH"/>
+        <item android:icon="@drawable/unchecked" android:id="@+id/portrait" android:title="PORTRAIT"/>
+        <item android:icon="@drawable/checked" android:id="@+id/landscape" android:title="LANDSCAPE"/>
+    </group>
+
+</menu>
